@@ -11,7 +11,7 @@ stages:
    - job: FirstJob
      steps:
      - bash: echo FirstJob 
-     - bash: $(PipeLineLevelVariable)
+     - bash: echo $(PipeLineLevelVariable)
    
    - job: SecondJob
      steps: 
