@@ -19,11 +19,12 @@ steps:
     workingDirectory: '$(System.DefaultWorkingDirectory)/configuration/iaac/azure/kubernetes'
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     backendType: 'azurerm'
-    backendServiceArm: 'azure-resource'
+    backendServiceArm: 'Free Trial(3fb9374b-9b78-41d2-b07c-3dde2f038555)'
+    backendAzureRmSubscriptionId: '3fb9374b-9b78-41d2-b07c-3dde2f038555'
     ensureBackend: true
-    backendAzureRmResourceGroupName: 'terraform-backend-rg'
-    backendAzureRmResourceGroupLocation: 'India'
-    backendAzureRmStorageAccountName: 'storageaccountpallaviabc'
+    backendAzureRmResourceGroupName: 'cloud-shell-storage-southcentralus'
+    backendAzureRmResourceGroupLocation: 'South Central US'
+    backendAzureRmStorageAccountName: 'cs710032001ee38abcb'
     backendAzureRmContainerName: 'storageaccountcontainer'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
     allowTelemetryCollection: true
