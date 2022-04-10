@@ -2,7 +2,8 @@ trigger:
 - master
 
 pool:
-  vmImage: 'self'
+  
+  vmImage: 'ubuntu-latest''
 
 steps:
 - script: echo K8S Terraform Azure!
